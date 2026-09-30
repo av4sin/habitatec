@@ -5,7 +5,18 @@
 **Autor:** Gonzalo Mondragón Báscones (av4sin)
 **Versión:** `2.3.2`
 
-Consulta la [wiki del proyecto](doc/index.html) para ver el montaje, el funcionamiento, el protocolo BLE, la configuración y la resolución de problemas.
+Consulta la [wiki del proyecto](https://av4sin.github.io/habitatec/) para ver el montaje, el funcionamiento, el protocolo BLE, la configuración y la resolución de problemas.
+
+## Publicar la web
+
+La web se genera desde los archivos Markdown mediante Jekyll y se publica con GitHub Pages. Para ponerla en línea:
+
+1. Sube estos cambios a la rama `main` del repositorio `av4sin/habitatec`.
+2. En GitHub abre `Settings > Pages` y selecciona `GitHub Actions` como fuente.
+3. Espera a que termine `Publicar wiki en GitHub Pages`.
+4. Abre `https://av4sin.github.io/habitatec/`.
+
+El contenido de la web está en `doc/*.md` y la estructura común en `_layouts/manual.html`.
 
 ## Resumen
 
