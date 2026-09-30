@@ -13,7 +13,7 @@ next:
   title: Montaje eléctrico
 ---
 
-<div id="ficha">
+<div id="ficha"></div>
 
 | | |
 | --- | --- |
@@ -21,5 +21,4 @@ next:
 | <i class="fa-solid fa-tag" aria-hidden="true"></i> **Versión** | 2.3.2 |
 | <i class="fa-solid fa-calendar" aria-hidden="true"></i> **Última versión** | 30 de septiembre de 2026 |
 | <i class="fa-solid fa-satellite-dish" aria-hidden="true"></i> **Para qué sirve** | Medir el ambiente de una habitación y consultar los datos desde una aplicación BLE. |
-
-</div>
+{: .data-table }
