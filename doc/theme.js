@@ -8,16 +8,16 @@
     if (!toggle) return;
 
     const updateToggle = function () {
-      const dark = root.dataset.theme !== 'light';
+      const dark = root.dataset.theme === 'dark';
       toggle.setAttribute('aria-pressed', String(dark));
       toggle.setAttribute('aria-label', dark ? 'Activar tema claro' : 'Activar tema oscuro');
       toggle.innerHTML = dark ? '<i class="fa-solid fa-sun" aria-hidden="true"></i>' : '<i class="fa-solid fa-moon" aria-hidden="true"></i>';
     };
 
     toggle.addEventListener('click', function () {
-      const dark = root.dataset.theme !== 'light';
-      if (dark) root.dataset.theme = 'light';
-      else delete root.dataset.theme;
+      const dark = root.dataset.theme === 'dark';
+      if (dark) delete root.dataset.theme;
+      else root.dataset.theme = 'dark';
       localStorage.setItem('habitatec-theme', dark ? 'light' : 'dark');
       updateToggle();
     });
