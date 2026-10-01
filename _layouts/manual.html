@@ -38,7 +38,7 @@
       {% if page.next or page.previous %}<div class="pager">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>Anterior</span><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> {{ page.previous.title }}</a>{% else %}<span></span>{% endif %}{% if page.next %}<a href="{{ page.next.url | relative_url }}"><span>Siguiente</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> {{ page.next.title }}</a>{% endif %}</div>{% endif %}
       <div class="meta"><span>Última actualización: 30 de septiembre de 2026</span><span>v2.3.2 · av4sin</span></div>
     </main>
-    <aside class="toc"><strong>EN ESTA PÁGINA</strong>{% for item in page.toc %}<a href="#{{ item.id }}"><i class="fa-solid {{ item.icon }}" aria-hidden="true"></i>{{ item.label }}</a>{% endfor %}</aside>
+    <aside class="toc"><strong>EN ESTA PÁGINA</strong>{% for item in page.toc %}<a href="#{{ item.id }}">{% if item.icon == 'fa-bluetooth-b' %}<i class="fa-brands {{ item.icon }}" aria-hidden="true"></i>{% else %}<i class="fa-solid {{ item.icon }}" aria-hidden="true"></i>{% endif %}{{ item.label }}</a>{% endfor %}</aside>
   </div>
   <footer>Habitatec v2.3.2 · Manual personal de av4sin</footer>
 </body>

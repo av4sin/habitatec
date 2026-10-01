@@ -65,7 +65,7 @@ code { padding: .15rem .35rem; border-radius: 4px; color: var(--teal); backgroun
 .sidebar a[href*="montaje"]::before { content: "\f1e6"; }
 .sidebar a[href*="puesta-en-marcha"]::before { content: "\f144"; }
 .sidebar a[href*="firmware"]::before { content: "\f2db"; }
-.sidebar a[href*="ble"]::before { content: "\f294"; }
+.sidebar a[href*="ble"]::before { content: "\f294"; font-family: "Font Awesome 6 Brands"; font-weight: 400; }
 .sidebar a[href*="datos"]::before { content: "\f121"; }
 .sidebar a[href*="problemas"]::before { content: "\f1cd"; }
 .sidebar a.active { border-left-color: var(--accent); color: var(--accent-dark); background: var(--active-bg); font-weight: 700; }
