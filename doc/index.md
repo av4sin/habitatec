@@ -1,7 +1,7 @@
 ---
 layout: manual
 title: Habitatec
-section: Proyecto personal
+section: Bienvenido
 description: Hub ambiental para ESP32 que lee un DHT11 y publica temperatura y humedad por Bluetooth Low Energy.
 permalink: /
 toc:
